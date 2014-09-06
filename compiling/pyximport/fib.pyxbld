@@ -1,0 +1,8 @@
+def make_ext(modname, pyxfilename):
+    from distutils.extension import Extension
+    return Extension(modname,
+            sources=[pyxfilename, '_fib.c'],
+            include_dirs = ['.'])
+
+# def make_setup_args():
+    # return dict(script_args=["--compiler=mingw32"])
