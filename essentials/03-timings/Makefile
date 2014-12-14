@@ -1,6 +1,6 @@
 .PHONY : all
 all:
-	python setup.py build_ext -i
+	python setup.py build_ext -if
 	gcc -O3 cfib.c main.c -o cfib.x
 
 .PHONY : clean

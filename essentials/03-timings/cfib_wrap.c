@@ -3,14 +3,15 @@
 
 static PyObject *wrap_fib(PyObject *self, PyObject *args)
 {
-    long arg, result;
+    int arg;
+    double result;
 
-    if (!PyArg_ParseTuple(args, "l:fib", &arg))
+    if (!PyArg_ParseTuple(args, "i:fib", &arg))
         return NULL;
 
-    result = fib(arg);
+    result = cfib(arg);
 
-    return Py_BuildValue("l", result);
+    return Py_BuildValue("f", result);
 }
 
 static PyMethodDef funcs[] = {

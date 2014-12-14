@@ -1,6 +1,6 @@
 cdef extern from "cfib.h":
-    unsigned long _fib "fib"(unsigned long n)
+    double cfib(int n)
 
 def fib(n):
     ''' Returns the nth Fibonacci number.'''
-    return _fib(n)
+    return cfib(n)

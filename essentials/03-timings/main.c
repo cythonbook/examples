@@ -18,7 +18,7 @@ int main(int argc, char **argv) {
 
     t = clock();
     for (i=0; i<numiter; ++i) {
-        fib(arg);
+        cfib(arg);
     }
     t = clock() - t;
     printf("%f\n", ((float)t) / CLOCKS_PER_SEC / numiter * 1e9);
