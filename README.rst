@@ -1,5 +1,5 @@
 ==============================================================================
-Code Examples for O'Reilly's _Cython_ Kurt W. Smith
+Code Examples for O'Reilly's **Cython** by Kurt W. Smith
 ==============================================================================
 
 This repository hosts the code examples for O'Reilly's *Cython: A Guide for
