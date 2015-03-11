@@ -1,11 +1,9 @@
-from setuptools import setup
-from distutils.extension import Extension
-
 import sys
+from setuptools import setup
+from Cython.Build import cythonize
+
 if 'setuptools.extension' in sys.modules:
     m = sys.modules['setuptools.extension']
     m.Extension.__dict__ = m._Extension.__dict__
 
-setup(name="fib",
-      setup_requires=['setuptools_cython'],
-      ext_modules=[Extension('fib', ['fib.pyx'])])
+setup(ext_modules=cythonize('fib.pyx'))

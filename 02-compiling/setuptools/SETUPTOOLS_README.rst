@@ -13,6 +13,4 @@ Currently, the best workaround is to use the `setuptools_cython
 <https://pypi.python.org/pypi/setuptools_cython/>`_ module.
 
 The ``setup_setuptools.py`` script uses this module to demonstrate how to use
-setuptools to build the ``fib.pyx`` module.  Unfortunately it is not possible
-to use ``cythonize()`` with setuptools, so this script is considerably more
-involved than the ``distutils``-based ``setup.py``.
+setuptools to build the ``fib.pyx`` module.
